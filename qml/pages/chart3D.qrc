@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Chart3D/Dat3DTest.qml</file>
+        <file>Chart3D/Bar3D.qml</file>
+        <file>Chart3D/LegendItem.qml</file>
+        <file>Chart3D/NewButton.qml</file>
+    </qresource>
+</RCC>

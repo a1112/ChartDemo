@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ChartMainView.qml</file>
+        <file>ChartViewBase.qml</file>
+        <file>ChartDelegate.qml</file>
+        <file>ChartsModelCore.qml</file>
+        <file>QtChartsTemp.qrc</file>
+        <file>Bar.qml</file>
+        <file>Pie.qml</file>
+        <file>theams/QtChartTheamSelect.qml</file>
+        <file>theams/TheamDelegate.qml</file>
+        <file>chart3D.qrc</file>
+        <file>BoxPlot.qml</file>
+        <file>Area.qml</file>
+    </qresource>
+    <qresource prefix="/charts"/>
+    <qresource prefix="/QtCharts"/>
+</RCC>

@@ -1,0 +1,8 @@
+{
+    "title": "ChartsDemo",
+    "identifier": "com.yourcompany.wizardEVAP.ChartsDemo",
+    "orientation": "auto",
+    "versioncode": 1,
+    "versionname": "1.0.0",
+    "stage": "test"
+}
