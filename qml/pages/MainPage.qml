@@ -2,7 +2,6 @@ import QtQuick 2.13
 import Felgo 3.0
 import QtQml.Models 2.13
 import QtQuick.Layouts 1.13
-import "Chart3D"
 Item{
     //主页面
     property NavigationStack rootStack
@@ -46,7 +45,7 @@ Item{
           ChartMainView{
 
           }
-          Bar3D{}
+          View3D{}
 
       }
 

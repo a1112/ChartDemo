@@ -16,9 +16,11 @@ AppPaper {
     id: root
     property bool iscurent: index==view.currentIndex //当前视图
     onIscurentChanged: {
-        if(iscurent)
+        if(main_loader.item.chart!==null)
+        if(iscurent &&main_loader.item.chart.reLoader!==null )
             main_loader.item.chart.reLoader()
         else{
+            if(main_loader.item.chart.clear!==null)
             main_loader.item.chart.clear()
         }
     }

@@ -28,9 +28,10 @@ QtObject{
             "chart_type",
             "chart_title",
             "chart_datas",
-            "chart_axisX",
-            "chart_axisY",
-            "axis"
+            "chart_axisX",//过时
+            "chart_axisY",//过时
+            "axis",
+            "series"//多视图
         ]
     }
 
@@ -45,7 +46,6 @@ QtObject{
                     {
                         chart_supplier:"QT",  //提供商
                         chart_type:"Pie",    //类型,可以优化（减少代码量）
-                        chart_title:"Pie",
                         chart_properties:{
                             title:"Pie"
                         },//ChartView 参数
@@ -61,10 +61,7 @@ QtObject{
                                 label:"数据C",
                                 value:15
                             }
-                        ],
-                        chart_axisX:{
-                            //虽然用不上，但是需要有，因为模型的原因
-                        }
+                        ]
                     }
                     )
 
@@ -421,6 +418,42 @@ QtObject{
                             {  x: 2.9, y: 4.9},
                             {  x: 3.4, y: 3.0},
                             { x: 4.1, y: 3.3 }
+                        ],
+                        axis:[
+                            {
+                                key:"axisY",//axisXTop,axisY,axisYRight,axisX
+                                type:"ValueAxis",
+                                properties:{
+                                    max:4.1,
+                                    min:0,
+                                }
+                            },
+                            {
+                                key:"axisX",//axisXTop,axisY,axisYRight,axisX
+                                type:"ValueAxis",
+                                properties:{
+                                    max:4.9,
+                                    min:0,
+                                }
+                            }
+                        ]
+                    }
+                    )
+        localModel.append(
+                    {
+                        chart_supplier:"QT",  //提供商
+                        chart_type:"Views"   ,    //类型
+                        chart_properties:{
+                            title:"Spline"
+                        },//ChartView 参数
+                    "series":[
+                            {
+                                chart_type:"Spline"   ,    //类型
+                                properties:{
+
+                                }
+                            }
+
                         ],
                         axis:[
                             {
